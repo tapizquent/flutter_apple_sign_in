@@ -87,11 +87,10 @@ class _AppleSignInButtonState extends State<AppleSignInButton> {
             ),
             Text(
               widget.type == ButtonType.continueButton
-                  ? 'Continue with Apple'
-                  : 'Sign in with Apple',
+                  ? 'Continue with Apple'.toUpperCase()
+                  : 'Sign in with Apple'.toUpperCase(),
               style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.bold,
                 letterSpacing: .3,
                 wordSpacing: -.5,
                 color: textColor,
